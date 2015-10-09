@@ -1,0 +1,39 @@
+a:link {color:#4a6386;}
+a:visited {color:#6b85a8;}
+a:hover {color:#715b38;}
+a img {border: none;}
+
+body {background:#ededed; color:#000; margin: 0px; padding: 0px;}
+body, div, p, span, th, td {font-family: Tahoma, Geneva, sans-serif; font-size:13px;}
+
+form {margin: 0px; padding: 0px;}
+
+h1 {font-size:18px; margin:0 0 10px 0; padding:0px;}
+h2 {font-size:16px; margin:0 0 10px 0; padding:0px;}
+h3 {font-size:14px; margin:0 0 10px 0; padding:0px;}
+h4 {font-size:13px; margin:0 0 10px 0; padding:0px;}
+
+.container {margin: 10px;}
+
+.content {background: #fff;}
+
+.footer {background: #fff; font-size: 10px; padding: 5px;}
+.footer a {text-decoration: none;}
+
+.header {background: url(images/header-bg.jpg) repeat-x bottom; min-height:50px;}
+
+.manga_image {text-align: center;}
+
+.manga_list {padding: 20px;}
+.manga_list .list {border:1px solid #ccc; border-collapse: collapse; width:100%;}
+.manga_list .list td {border: 1px solid #ccc; padding: 10px;}
+.manga_list .list td h1 {margin: 0;}
+
+.navigation {background: #e2e2e2; padding: 5px;}
+.navigation a {margin:0 10px 0 10px; padding: 5px 0 5px 0;}
+.navigation a:hover {background: #e7e7e7;}
+
+.page_control_dn {text-align: center;}
+.page_control_up {text-align: center;}
+
+.preview_image {display:block; margin:10px auto; width:500px;}

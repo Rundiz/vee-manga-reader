@@ -1,0 +1,12 @@
+1. extract to your directory
+
+2. set RewriteBase / in .htaccess to your base location
+eg. extract to /manga set it to /manga/
+
+3. launch http://youraddress.tld/manga or http://youeaddress.tld if you put in root web
+
+enjoy!
+
+design your theme at web-content/themes/default or create new.
+
+this manga reader from okvee.net by Vee W. licensed GPL. free for everyone, do not sell this script!
