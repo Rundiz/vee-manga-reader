@@ -21,7 +21,6 @@ class Read extends Controller {
 		$manga = $this->uri->segment(2);// /read/manga
 		$chapter = $this->uri->segment(3);// /read/manga/chapter
 		$atpage = $this->uri->segment(4);// /read/manga/chapter/page1
-		//$this->index($manga, $chapter);
 		if ( $manga == null ) {
 			redirect(base_url(), 'location');
 		}// no manga select
@@ -31,7 +30,7 @@ class Read extends Controller {
 		} else {
 			// reading chapter, go to read chapter method (atpage)
 			$atpage = ( $atpage == null ? "1" : $atpage );
-			$this->read_page($manga, $chapter, $atpage);
+                        $this->read_page($manga, $chapter, $atpage);
 		}
 	}// _remap
 	
@@ -93,7 +92,11 @@ class Read extends Controller {
 			$output['pages'] = $files;
 			$output['total_page'] = $count-1;
 			unset($files);
+		                } else {
+                //redirect(base_url(), 'location');
+		show_404();
 		}
+
 		/* end list pages */// //////////////////////////////
 		/* get current page */
 		$output['current_page'] = "1";
@@ -128,8 +131,12 @@ class Read extends Controller {
 				}
 			}
 			$output['current_page'] = $count;
+			if (isset($files)) {
 			$output['file_name'] = $files;
-		}
+			} else {
+			show_404();
+			}
+		} 
 		/* end get current page */// //////////////////////////////
 		/* get next page */
 		if ( $output['current_page']+1 > $output['total_page'] ) {
